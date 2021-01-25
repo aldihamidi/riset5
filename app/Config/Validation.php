@@ -1,4 +1,6 @@
-<?php namespace Config;
+<?php
+
+namespace Config;
 
 class Validation
 {
@@ -17,6 +19,7 @@ class Validation
 		\CodeIgniter\Validation\FormatRules::class,
 		\CodeIgniter\Validation\FileRules::class,
 		\CodeIgniter\Validation\CreditCardRules::class,
+		\Myth\Auth\Authentication\Passwords\ValidationRules::class,
 	];
 
 	/**
@@ -33,4 +36,54 @@ class Validation
 	//--------------------------------------------------------------------
 	// Rules
 	//--------------------------------------------------------------------
+
+	public $insertResource = [
+		'menu' => 'required',
+		'title' => 'required',
+		'url' => 'required',
+		'icon' => 'required',
+		'active' => 'required',
+	];
+
+	public $insertResource_errors  = [
+		'menu' => [
+			'required'      => 'Menu is required',
+		],
+		'title' => [
+			'required'      => 'Title is required',
+		],
+		'url' => [
+			'required'      => 'URL must be filled',
+		],
+		'icon' => [
+			'required'      => 'Icon must be filled',
+		],
+		'active' => [
+			'required'      => 'Resources active status must be filled',
+		]
+	];
+
+	public $insertMenu = [
+		'menu' => 'required',
+		'icon' => 'required',
+	];
+
+	public $updateMenu = [
+		'id' => 'required|numeric',
+		'menu' => 'required',
+		'icon' => 'required',
+	];
+
+	public $insertMenu_errors  = [
+		'id' => [
+			'required'      => 'Menu id is required',
+			'numeric'      => 'Menu id can only be filled with numeric',
+		],
+		'menu' => [
+			'required'      => 'Menu name is required',
+		],
+		'icon' => [
+			'required'      => 'Icon must be filled',
+		]
+	];
 }

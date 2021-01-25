@@ -1,0 +1,26 @@
+nama database riset5
+
+.env
+
+vendor/myth/auth/src/Config/Auth.php
+vendor/myth/auth/src/Database/Migrations/2017-11-20-223112_create_auth_tables.php
+app/Config/Email.php
+app/Config/Validation.php tambah ruleSet
+app/Config/Filters.php
+app/Controllers/User.php nanti diganti jadi Auth.php
+
+
+Cara Install library myth/auth
+
+- Pada composer.json. Tambahkan dibawah "license" dan diatas "require"
+	"minimum-stability": "beta",
+	"prefer-stable": true,
+
+- Jalankan pada terminal
+	composer require myth/auth
+
+Konfigurasi database
+- Jika ada yang perlu ditambahkan atau dikurangi
+	vendor/myth/auth/src/Database/Migrations/2017-11-20-223112_create_auth_tables.php
+- Jalankan pada terminal
+	php spark migrate -all
