@@ -125,8 +125,3 @@ nb-configuration.xml
 /results/
 /phpunit*.xml
 /.phpunit.*.cache
-
-public/*
-!public/public.rar
-!public/css.rar
-!public/js.rar

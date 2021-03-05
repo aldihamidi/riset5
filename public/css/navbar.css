@@ -1,0 +1,37 @@
+.menuklik {
+  background: linear-gradient(360deg, #003c75 0%, rgba(0, 60, 117, 0) 100%);
+  /* background: linear-gradient(to right, orange, #ec38bc, #7303c0, cyan); */
+}
+
+.menu {
+  background: linear-gradient(360deg, #015998 0%, rgba(1, 89, 152, 0) 100%);
+}
+
+.menu:hover {
+  background: #014f86;
+}
+
+.cari {
+  background: linear-gradient(360deg, #307bb1 0%, rgba(1, 89, 152, 0) 100%);
+}
+
+.cari:hover {
+  background: linear-gradient(360deg, #015998 0%, rgba(1, 89, 152, 0) 100%);
+}
+
+.lingkaran {
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(
+    302.03deg,
+    #005998 15.78%,
+    rgba(0, 89, 152, 0) 80.65%
+  );
+  border-radius: 100%;
+  margin-top: -520px;
+  margin-left: -220px;
+}
+
+.active {
+  display: block;
+}
